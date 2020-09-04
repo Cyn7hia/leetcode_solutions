@@ -17,6 +17,7 @@ class Solution:
         
         if distance:
             distance_s = sorted(distance, key=lambda x:x[2], reverse=True)
+            del distance
 
             for items in distance_s:
                 pos,pos_j,dis = items
